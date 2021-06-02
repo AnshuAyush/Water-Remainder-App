@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/red_fish"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:id="@+id/red_fish"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/tap"
+            app:lottie_loop="true"
+            android:layout_marginTop="100dp"
+            android:id="@+id/hand"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/water_animation"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/water"
+            android:layout_marginBottom="200dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/Life_is_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:textColor="@color/neon_blue"
+            android:text="Life is Simple.Just Add Water !!"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            style="@style/Widget.MaterialComponents.TimePicker.Button"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Life_is_simple"
+            app:lottie_rawRes="@raw/fish"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/purple_fish"
+            />
+
+        <TextView
+            android:id="@+id/text_quote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Water is life's matter and matrix, mother and medium. There is no life without water"
+            android:textSize="10sp"
+            android:textColor="@color/neon_blue"
+            android:layout_marginTop="630dp"
+            />
+
+
+
+<!--        After-->
+
+        <EditText
+            android:id="@+id/Set_the_timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:hint="Set in Hours"
+            android:textColorHint="@color/white"
+            android:textColor="@color/teal_700"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:backgroundTint="@color/black"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Set_the_timer"
+            android:layout_centerHorizontal="true"
+            android:text="SET"
+            android:id="@+id/btn_set"
+            android:textColor="@color/off_white"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:id="@+id/timer"
+            app:lottie_rawRes="@raw/timer_one"
+            android:visibility="invisible"
+            android:alpha="0.5"
+
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/drink"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            android:id="@+id/drink"
+            style="@style/Platform.MaterialComponents"
+
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="550dp"
+            android:id="@+id/restart"
+            android:visibility="invisible"
+            android:text="GET HYDRATED AGAIN"
+            android:textColor="@color/off_white"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/complete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/complete"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_rawRes="@raw/women"
+            android:id="@+id/women"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:visibility="invisible"
+            android:layout_marginTop="250dp"
+
+            />
+
+
+
+</RelativeLayout>
